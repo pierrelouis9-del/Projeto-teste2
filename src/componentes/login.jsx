@@ -12,6 +12,9 @@ function Login({ Title }) {
     if (nome === "admin") {
       setMensagemAlerta("Bem-vindo Admin!");
       setTimeout(() => navigate("/Home"), 1000);
+    } else {
+      setMensagemAlerta("Usuário não reconhecido. Tente 'admin' e '1234'");
+      setTimeout(() => setMensagemAlerta(""), 3000); 
     }
   }
 
@@ -19,8 +22,9 @@ function Login({ Title }) {
     <div className="login-container">
         <div className="login-card">
       <h1>{Title}</h1>
-      
+      <div className="alert-message">
       {mensagemAlerta && <p>{mensagemAlerta}</p>}
+      </div>
 
       <input 
         type="text"
