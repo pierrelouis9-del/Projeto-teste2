@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Login from "./componentes/login";
 import Home from "./componentes/home";
-import Cadastroprof from "./componentes/administrador/cadastraprof";
-import Cadastroaluno from "./componentes/administrador/cadastraaluno";
+import Cadastroprof from "./administrador/cadastraprof";
+import Cadastroaluno from "./administrador/cadastraaluno";
 
 function App() {
   return (
