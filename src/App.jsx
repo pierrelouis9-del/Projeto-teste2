@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Login from "./componentes/login";
-import Home from "./componentes/home";
+import Home from "./componentes/Home";
 import Cadastroprof from "./administrador/cadastraprof";
 import Cadastroaluno from "./administrador/cadastraaluno";
 

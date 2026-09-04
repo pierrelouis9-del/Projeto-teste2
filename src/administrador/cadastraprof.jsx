@@ -54,7 +54,7 @@ function Cadastroprof({ title }) {
                     Cadastrar Professor
                 </button>
                 <br />
-                <button onClick={() => navigate("/home")}>
+                <button onClick={() => navigate("/Home")}>
                     Voltar ao Home
                 </button>
             </div>
