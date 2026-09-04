@@ -1,11 +1,13 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./turma.css";
 
 function Cadastroturma() {
 
     const [nome, setNome] = useState('');
     const [professor, setProfessor] = useState('');
+    const navigate = useNavigate();
 
-   
     const professores = JSON.parse(
         localStorage.getItem('professores') || '[]'
     );
@@ -80,6 +82,11 @@ function Cadastroturma() {
 
             <button onClick={CadastrarTurma}>
                 Cadastrar Turma
+            </button>
+
+            <br />
+            <button onClick={() => navigate("/Home")}>
+                Voltar ao Home
             </button>
 
         </main>

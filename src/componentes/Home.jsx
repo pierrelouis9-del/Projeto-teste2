@@ -18,12 +18,19 @@ function Home() {
                             Cadastrar Aluno
                         </button>
                     </div>
-
+<br />
                     <div>
                         <button onClick={() => navigate("/cadastraprof")}>
                             Cadastrar Professor
                         </button>
                     </div>
+                    <br />
+                    <div>
+                    <button onClick={() => navigate("/cadastraturma")}>
+                            Cadastrar Turma
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>

@@ -3,6 +3,7 @@ import Login from "./componentes/login";
 import Home from "./componentes/Home";
 import Cadastroprof from "./administrador/cadastraprof";
 import Cadastroaluno from "./administrador/cadastraaluno";
+import Cadastroturma from "./administrador/cadastraturma";
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
                 <Route
         path="/cadastraaluno" element={<Cadastroaluno />}
         />
+          <Route
+        path="/cadastraturma" element={<Cadastroturma/>}
+        />
+
 
       </Routes>
     </>
